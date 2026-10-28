@@ -1,0 +1,12 @@
+# Editor & IDE
+.vscode/
+.ideal/
+*.swp
+*.bak
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
