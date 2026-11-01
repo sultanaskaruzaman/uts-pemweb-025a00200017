@@ -1,0 +1,119 @@
+<?php
+declare(strict_types=1);
+
+require __DIR__ . "/data.php";
+require __DIR__ . "/functions.php";
+?>
+
+<!DOCTYPE html>
+<html lang="id"><
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container navbar__inner">
+        <a href="index.php" class="brand">
+            <img src="assets/logo.jpeg" alt="Logo Pertina" class="brand__logo" width="42" height="42">
+        </a>
+        <nav class="nav-menu">
+            <a href="index.php" class="active">Profil</a>
+            <a href="katalog.php">Katalog Jadwal</a>
+            <a href="#kontak" class="btn-primary">Daftar Sekarang</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+     <section class="hero">
+       
+        <div class="container hero__content">
+            <span class="tagline">Pusat Pembinaan & Latihan Tinju Kabupaten Sukoharjo</span>
+            <h1>Dari Ring Latihan Menuju Panggung Kehormatan</h1>
+            <p>Membina mental disiplin, ketahanan fisik, dan prestasi olahraga tinju dari level pemula hingga siap bertanding di tingkat nasional.</p>
+            <div class="hero__buttons">
+                <a href="katalog.php" class="btn-primary">Lihat Jadwal Latihan</a>
+                <a href="#biaya" class="btn-secondary">Informasi Biaya</a>
+            </div>
+        </div>
+     </section>
+
+     <!-- Kartu Pilihan Kelas Latihan (Sore / Malam) -->
+      <section class="section container" id="kelas">
+        <div class="section=title">
+            <h2>Pilihan Waktu Latihan</h2>
+            <p>Hari Latihan Rutin: <st>Minggu, Selasa, & Jum'at</strong></p>
+        </div>
+        <div class="grid grid--2">
+            <article class="card card--highlight">
+            </article>
+
+            <article class="card card--highlight">
+            </article>
+        </div>
+     </section>
+    
+    <!-- Rincian Biaya Membership vs Per Sesi -->
+    <section class="section section--alt" id="biaya">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skema Biaya Latihan</h2>
+            </div>
+            <div class="grid grid--2">
+                <div class="card price-card">
+                    <h3>Membership Bulanan</h3>
+                </div>
+
+                <div class="card price-card">
+                    <h3>Per Sesi Latihan</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Section Lokasi & Form Kontak -->
+ <section class="sction section--alt" id="kontak">
+    <div class="container">
+        <div class="section-title">
+            <h2>Lokasi & Pendaftaran</h2>
+        </div>
+        <div class="grid grid--2">
+            <div class="card">
+                <h3>Kontak Resmi</h3>
+                <p class="contact-number"><strong>WhatsApp:</strong></p>
+                <p class="instagram-username"><strong>Instagram: </strong></p>
+                <p><strong>Alamat:</strong> Dusun 1, Langenharjo, Kec. Grogol, Kab. Sukoharjo, Jawa Tengah.</p>
+            </div>
+
+            <div class="card">
+                <h3>Formulir Pesan /Pertanyaan</h3>
+                <form action="#" method="post" class="form">
+                   <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama kamu">
+                    </div>
+                    <div class="form-group">
+                        <label for="no_hp">Nomor WhatsApp:</label>
+                        <input type="text" id="no_hp" name="no_hp" required placeholder="08xxxxxxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pilihan Sesi Latihan:</label>
+                        <textarea id="pesan" name="pesan" rows="3" required placeholder="Tanyakan seputan pendaftaran..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</section></main>
+
+<footer class="footer">
+
+</footer>
+</body></html>

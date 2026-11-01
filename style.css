@@ -1,0 +1,39 @@
+/* Reset & Global Box-Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #121318;
+    color: #e2e8f0
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigasi Header */
+.navbar {
+    background-color: #1a1c23;
+    border-bottom: 2px solid #e53e3e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1c23;
+    border-top: 1px solid #2d3748;
+    padding: 25px 0;
+    text-align: center;
+    color: #718096;
+    margin-top: 40px;
+}
