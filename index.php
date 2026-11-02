@@ -43,7 +43,7 @@ require __DIR__ . "/functions.php";
                 <span class="tagline">Pusat Latihan Tinju Sukoharjo</span><br>
                 <span class="tagline">Membina mental & disiplin</span><br>
                 <span class="tagline">Dari nol sampai jadi juara</span>
-                <h1>Ksatria Di Dalam Dan Di Luar Ring</h1>
+                <h1>KSATRIA DI DALAM DAN DI LUAR RING</h1>
                 <div class="hero__buttons">
                     <a href="katalog.php" class="btn-primary">Jadwal Latihan</a>
                     <a href="#biaya" class="btn-secondary">Membership</a>
