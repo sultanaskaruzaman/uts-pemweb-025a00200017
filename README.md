@@ -1,4 +1,4 @@
-# PROYEK MINI UTS: WEBSITE NST ACADEMY
+# PROYEK MINI UTS: WEBSITE PERTINA SUKOHARJO
 
 ## 1. Identitas
 - **Nama        :** Sultan Firsta Askaruzaman
@@ -18,8 +18,8 @@ Website ini menyediakan informasi program latihan, biaya membership/non-member, 
 3. Buka browser dan akses alamat: `http://localhost/uts-pemweb-025a00200017/index.php`
 
 ## 4. Daftar Fitur dan Penanganan File
-- **Halaman Profil & Berita Prestasi (`index.php`):** Menyajikan profil camp, keunggulan, rincian biaya, dan form kontak.
-- **Halaman Katalog Latihan (`katalog.php`):** Menampilkan perulangan `foreach` daftar sesi latihan secara dinamis.
+- **Halaman Profil(`index.php`):** Menyajikan profil camp, keunggulan, rincian biaya, dan form kontak.
+- **Halaman Katalog Sesi (`katalog.php`):** Menampilkan perulangan `foreach` daftar sesi latihan secara dinamis.
 - **Filter URL Interaktif (`functions.php` & `katalog.php`):** Memfilter jadwal sore/malam via paameter '$_GET["jadwal"]' dengan fungsi `filterJadwal()`.
 - **Status Kuota Dinamis (`functions.php`):** Menggunakan percabangan 'match(true)' dalam fungsi `statusKuota()` dan `badgeStatusKuota()`.
 
