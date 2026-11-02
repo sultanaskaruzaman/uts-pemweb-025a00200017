@@ -32,12 +32,12 @@ Website ini menyediakan informasi program latihan, biaya membership/non-member, 
 
 ## 6. Screenshots
 ### Halaman Profil
-!(screenshots/Profil_Hero.png)
-!(screenshots/Profil_Jadwal.png)
-!(screenshots/Kontak_Pendaftaran.png)
+![Tampilan Profil](screenshots/Profil_Hero.png)
+![Jam Latihan](screenshots/Profil_Jadwal.png)
+![Kontak & Pendaftaran](screenshots/Kontak_Pendaftaran.png)
 
 ### Halaman Katalog Sesi
-!(screenshots/Katalog_sesi.png)
+![Katalog Sesi](screenshots/Katalog_sesi.png)
 
 ## 7. Referensi & Catatan Pemakaian AI
 1. Referensi
