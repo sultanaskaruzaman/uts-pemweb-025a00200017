@@ -2,10 +2,54 @@
 declare(strict_types=1);
 
 //identitas dam informasi Camp
-$namaCamp = "Pertina Sukoharjo";
+$namaCamp = "PERTINA SUKOHARJO";
 $lokasiCamp = "Dusun 1, Langenharjo, Kec. Grogol, Kab. Sukoharjo";
 $kontakPelatih = "0882-2509-8117 (Coach Krisna)";
 $instagramCamp = "@pertina.sukoharjoo";
+
+//Array Jadwal Latiham
+$jamLatihan = [
+    [
+        "jadwal" => "Sore",
+        "kategori" => "Student / Beginner",
+        "jam" => "16.30 - 18.00",
+        "hari" => "Selasa, Jum'at & Minggu",
+        "fokus" => "Teknik dasar | Footwork | Conditioning"
+    ],
+    [
+        "jadwal" => "Malam",
+        "kategori" => "Worker / Athlete",
+        "jam" => "19.30 - 21.00",
+        "hari" => "Selasa, Jum'at & Minggu",
+        "fokus" => "Pad work | Kombinasi | Sparring"
+    ]
+];
+
+//Array Skema Membership
+$paketLatihan = [
+    [
+        "nama" => "Membership Bulanan",
+        "biaya" => 150000,
+        "satuan" => "/ bulan",
+        "biaya_awal" => "+ Biaya Pendaftaran Awal: Rp 50.000",
+        "fitur" => [
+            "Bebas ikuti latihan semua sesi",
+            "Pendampingan pelatih berlisensi Pertina",
+            "Bebas akses fasilitas samsak & ring"
+        ]
+    ],
+    [
+        "nama" => "Per Sesi Latihan",
+        "biaya" => 20000,
+        "satuan" => "/ sesi",
+        "biaya_awal" => "Tanpa biaya pendaftaran awal",
+        "fitur" => [
+            "Cocok untuk yang mencoba/latihan fleksibel",
+            "Bimbingan materi latihan harian",
+            "Bebas akses peralatan dasar camp"
+        ]
+    ]
+];
 
 //Array Multidimensi Utama: Minimal 8 Item & Atribut Lengkap
 $daftarJadwal = [
@@ -15,7 +59,6 @@ $daftarJadwal = [
         "kategori" => "Pemula",
         "jadwal" => "Sore",
         "hari" => "Selasa & Jum'at",
-        "jam" => "16.30 - 18.00 WIB",
         "biaya"=> 20000,
         "kuota" => 12
     ],
@@ -25,17 +68,15 @@ $daftarJadwal = [
         "kategori" => "Menengah",
         "jadwal" => "Sore",
         "hari" => "Minggu",
-        "jam" => "16.30 - 18.00 WIB",
         "biaya"=> 20000,
         "kuota" => 8
     ],
     [
         "kode" => "BOX-03",
         "nama_kelas" => "Physical Conditioning & Heavy Bag",
-        "kategori" => "Semua Level",
+        "kategori" => "Menengah",
         "jadwal" => "Sore",
         "hari" => "Selasa & Jum'at",
-        "jam" => "16.30 - 18.00 WIB",
         "biaya"=> 20000,
         "kuota" => 0
     ],
@@ -45,17 +86,15 @@ $daftarJadwal = [
         "kategori" => "Pemula",
         "jadwal" => "Sore",
         "hari" => "Minggu",
-        "jam" => "18.30 - 20.00 WIB",
         "biaya"=> 20000,
         "kuota" => 15
     ],
     [
         "kode" => "BOX-05",
         "nama_kelas" => "Power Punching & Head Movement",
-        "kategori" => "Menengah",
+        "kategori" => "Lanjutan",
         "jadwal" => "Malam",
         "hari" => "Selasa & Jum'at",
-        "jam" => "19.30 - 21.00 WIB",
         "biaya"=> 20000,
         "kuota" => 10
     ],
@@ -65,17 +104,15 @@ $daftarJadwal = [
         "kategori" => "Lanjutan",
         "jadwal" => "Malam",
         "hari" => "Jum'at",
-        "jam" => "19.30 - 21.00 WIB",
         "biaya"=> 20000,
         "kuota" => 4
     ],
     [
         "kode" => "BOX-07",
         "nama_kelas" => "Endurance & Circuit Drill",
-        "kategori" => "Semua Level",
+        "kategori" => "Lanjutan",
         "jadwal" => "Malam",
-        "hari" => "Minggu & Selasa",
-        "jam" => "19.30 - 21.00 WIB",
+        "hari" => "Selasa & Minggu",
         "biaya"=> 20000,
         "kuota" => 0
     ],
@@ -84,8 +121,7 @@ $daftarJadwal = [
         "nama_kelas" => "Atlet Comptition Preparation",
         "kategori" => "Prestasi",
         "jadwal" => "Malam",
-        "hari" => "Minggu, Selasa, Jum'at",
-        "jam" => "19.30 - 21.00 WIB",
+        "hari" => "Selasa, Jum'at, Minggu",
         "biaya"=> 20000,
         "kuota" => 5
     ]

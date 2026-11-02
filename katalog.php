@@ -35,26 +35,28 @@ $totalKuota = hitungTotalKuota($daftarJadwal);
 <body>
     <header class="navbar">
         <div class="container navbar_inner">
-            <a href="index.php" class="brand"><?=  e($namaCamp) ?></a>
+        <a href="index.php" class="brand">
+            <img src="assets/logo.jpeg" alt="Logo Pertina" class="brand__logo" width="42" height="42">
+            <span><?=  e($namaCamp) ?></span>
+        </a>
             <nav class="nav-menu">
                 <a href="index.php">Profil</a>
-                <a href="katalog.php" class="active">Katalog Jadwal</a>
-                <a href="index.php#kontak" class="btn-primary">Daftar Sekarang</a>
+                <a href="katalog.php" class="active">Katalog Sesi</a>
+                <a href="index.php#kontak" class="btn-primary">Join Now</a>
             </nav>
         </div>
     </header>
 
     <main class="container section">
         <div class="section-title">
-            <h1>Katalog Sesi Latihan Tinju</h1>
-            <p>Silakan pilih dan filter sesi latihan sesuaiwaktu luang kamu</p>
+            <h1>Katalog Sesi Latihan</h1>
         </div>
 
         <!-- Banner Ringkasan Hasil Hitung (Diolah Dinamis dari Array) -->
          <section class="summary-bar grid grid--4">
             <div class="summary-card">
                 <h4>Total Sesi Terdaftar</h4>
-                <p class="summary-number"><?=  $totalSesi ?></p>
+                <p class="summary-number"><?=  $totalSesi ?> Sesi</p>
             </div>
             <div class="summary-card">
                 <h4>Total Sesi Sore</h4>
@@ -72,7 +74,6 @@ $totalKuota = hitungTotalKuota($daftarJadwal);
 
          <!-- Tombol Filter Interaktif Inter-Halaman -->
           <div class="filter-container">
-            <span>Filter Waktu Latihan:</span>
             <?php foreach ($pilihanFilter as $f): ?>
                 <a href="katalog.php?jadwal=<?=  urlencode($f) ?>"
                 class="btn-filter <?=  $f === $jadwalDipilih ? 'btn-filter--active' : '' ?>">
@@ -102,7 +103,6 @@ $totalKuota = hitungTotalKuota($daftarJadwal);
                         <p class="code-info">Kode: <strong><?=  e($item["kode"]) ?></strong> | Kategori: <strong><?=  e($item["kategori"]) ?></strong></p>
                         <div class="schedule-details">
                             <p><strong>Hari: <?=  e($item["hari"]) ?></strong></p>
-                            <p><strong>Jam: <?=  e($item["jam"]) ?></strong></p>
                             <p><strong>Non-Member:</strong> <?=  formatRupiah($item["biaya"]) ?> / sesi</p>
                             <p><strong>Sisa Kuota:</strong> <?=  $item["kuota"] ?> tempat</p>
                         </div>
