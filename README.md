@@ -33,7 +33,7 @@ Website ini menyediakan informasi program latihan, biaya membership/non-member, 
 ## 6. Screenshots
 ### Halaman Profil
 ![Tampilan Profil](screenshots/Profil_Hero.png)
-![Jam Latihan](screenshots/Profil_Jadwal.png)
+![Jam Latihan & Biaya](screenshots/Profil_Jadwal_Membership.png)
 ![Kontak & Pendaftaran](screenshots/Kontak_Pendaftaran.png)
 
 ### Halaman Katalog Sesi
