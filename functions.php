@@ -1,34 +1,29 @@
 <?php
 declare(strict_types=1);
 
-/**
- * * Fungsi Pembungkus Keamanan XSS
- */
+
+//Fungsi Pembungkus Keamanan XSS
 function e(string $teks): string {
     return htmlspecialchars($teks, ENT_QUOTES, 'UTF-8');
 }
 
-/**
- * * Format Angka ke rupiah
- */
+//Format Angka ke rupiah
 function formatRupiah(float $angka): string {
     return "Rp " . number_format($angka, 0, ',', '.') . '';
 }
 
-/**
- * * FMenentukan Status Kuota Latihan Menggunakan Percabangan match(true
- */
+//Menentukan Status Kuota Latihan Menggunakan Percabangan match(true)
+const BATAS_HABIS = 0;
+const BATAS_MENIPIS = 5;
 function statusKuota(int $kuota): string {
     return match(true) {
-        $kuota === 0 => "Penuh",
-        $kuota <= 5 => "Sisa Sedikit",
+        $kuota === BATAS_HABIS => "Penuh",
+        $kuota <= BATAS_MENIPIS => "Sisa Sedikit",
         default => "Tersedia",
     };
 }
 
-/**
- * * Menentukan Nama Kelas Badge CSS Berdasarkan Statur Kuota
- */
+//Menentukan Nama Kelas Badge CSS Berdasarkan Statur Kuota
 function badgeStatusKuota(string $status): string {
     return match($status) {
         "Penuh" => "badge badge--penuh",
@@ -37,9 +32,7 @@ function badgeStatusKuota(string $status): string {
     };
 }
 
-/**
- * * Menentukan Nama Kelas Badge CSS Berdasarkan Waktu Jadwal
- */
+//Menentukan Nama Kelas Badge CSS Berdasarkan Waktu Jadwal
 function badgeJadwal(string $waktu): string {
     return match($waktu) {
         "Sore" => "badge badge--sore",
@@ -48,9 +41,7 @@ function badgeJadwal(string $waktu): string {
     };
 }
 
-/**
- * * Memfilter Daftar Jadwal Berdasarkan Pilihan URL
- */
+//Memfilter Daftar Jadwal Berdasarkan Pilihan URL
 function filterJadwal(array $data, string $pilihanJadwal): array {
     if ($pilihanJadwal === "Semua") {
         return $data;
@@ -58,16 +49,12 @@ function filterJadwal(array $data, string $pilihanJadwal): array {
     return array_filter($data, fn(array $item): bool => $item['jadwal'] === $pilihanJadwal);
 }
 
-/**
- * * Menghitung Total Kuota yang Masih Tersedia (Fungsi Array: array_column & array_sum)
- */
+//Menghitung Total Kuota yang Masih Tersedia (Fungsi Array: array_column & array_sum)
 function hitungTotalKuota(array $data): int {
     return array_sum(array_column($data, "kuota"));
 }
 
-/**
- * * Menghitung Jumlah Sesi Berdasarkan Jenis Jadwal (Fungsi Array: array_filter & count)
- */
+//Menghitung Jumlah Sesi Berdasarkan Jenis Jadwal (Fungsi Array: array_filter & count)
 function hitungJumlahSesi(array $data, string $jadwal): int {
     $filtered = array_filter($data, fn(array $item): bool => $item['jadwal'] === $jadwal);
     return count($filtered);
