@@ -31,10 +31,21 @@ Website ini menyediakan informasi program latihan, biaya membership/non-member, 
 5. `in_array()`: Memvalidasi parameter filter dari URL untuk keamanan data.
 
 ## 6. Screenshots
+### Halaman Profil
+!(Profil_Hero.png)
+!(Profil_Jadwal.png)
+!(Kontak_Pendaftaran.png)
+
+### Halaman Katalog Sesi
+!(Katalog_sesi.png)
 
 ## 7. Referensi & Catatan Pemakaian AI
 1. Referensi
-    - Handout Pemrograman Web Peretemuan 1-7
+    - Handout Pemrograman Web Pertemuan 1-7
     - Lembar Perintah UTS Proyek Mini Individu Pemrograman Web.pdf
+    - Instagram Pertina Sukoharjo
 2. Catatan Pemakaian AI
-    - 
+    - AI yang digunakan adalah notebookLM untuk meminimalisir halusinasi dan kemudahan membatasi sumber.
+    - Diskusi konsep website dan ide desain UI/UX.
+    - Bantuan troubleshooting bug.
+    - Review kataatan kode terhadap ketentuan UTS.
